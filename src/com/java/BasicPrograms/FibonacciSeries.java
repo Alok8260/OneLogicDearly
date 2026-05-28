@@ -1,4 +1,4 @@
-package com.java.ArrayProgram;
+package com.java.BasicPrograms;
 
 import java.util.Scanner;
 
