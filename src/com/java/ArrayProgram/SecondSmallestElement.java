@@ -1,5 +1,5 @@
 package com.java.ArrayProgram;
-
+//This logic works with normal cases.
 public class SecondSmallestElement {
     public static void main(String[] args) {
         int[] arr = {3, 4, 5, 7, 6, 9};
