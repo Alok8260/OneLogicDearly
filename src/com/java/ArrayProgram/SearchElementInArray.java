@@ -2,27 +2,56 @@ package com.java.ArrayProgram;
 
 import java.util.Scanner;
 
+// Program to search an element in an array
 public class SearchElementInArray {
-    public static void searchElement(int searchElement){
-        int[] arr={1, 4, 6, 7, 9, 0, -1, -4 ,4, 18};
-        boolean isPresent=true;
-        for (int i = 0; i <=arr.length-1; i++) {
-            if (arr[i] == searchElement){
-                isPresent=true;
-            }else {
-                isPresent=false;
+
+    // Method to search the given element
+    public static void searchElement(int searchElement) {
+
+        // Array in which the element will be searched
+        int[] arr = {1, 4, 6, 7, 9, 0, -1, -4, 4, 18};
+
+        // Initially assume the element is not present
+        boolean isPresent = false;
+
+        // Traverse the array
+        for (int i = 0; i < arr.length; i++) {
+
+            // Check whether the current element matches the search element
+            if (arr[i] == searchElement) {
+
+                // Element found
+                isPresent = true;
+
+                // No need to continue searching
+                break;
             }
         }
-        if (isPresent){
-            System.out.println(searchElement +" is present in an Array");
-        }else {
-            System.out.println(searchElement+ " is not present in an Array");
+
+        // Display result
+        if (isPresent) {
+            System.out.println(searchElement + " is present in the Array");
+        } else {
+            System.out.println(searchElement + " is not present in the Array");
         }
     }
+
+    // Main method - execution starts here
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter Search number: ");
-        int num= sc.nextInt();
+
+        // Create Scanner object to take input from user
+        Scanner sc = new Scanner(System.in);
+
+        // Ask user for the element to search
+        System.out.print("Enter Search Number: ");
+
+        // Read integer input
+        int num = sc.nextInt();
+
+        // Call search method
         searchElement(num);
+
+        // Close scanner to prevent resource leak
+        sc.close();
     }
 }
