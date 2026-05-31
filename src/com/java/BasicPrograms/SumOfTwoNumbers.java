@@ -1,7 +1,7 @@
 package com.java.BasicPrograms;
 
 import java.util.Scanner;
-
+// Sum of two number
 public class SumOfTwoNumbers {
     public void sumOfTw0(int a, int b){
         int c= a+b;
