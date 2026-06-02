@@ -1,6 +1,6 @@
 package com.java.ArrayProgram;
 
-// Program to copy elements from one array to another array
+// Program to copy elements from one array to another array.
 public class CopyArray {
 
     public static void main(String[] args) {
